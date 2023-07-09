@@ -41,12 +41,12 @@ Requirements: Java 17 or plus
 
 ```bash
 # clone repository 
-git clone git@github.com:charlesmyller22/dscatalog.git
+git clone git@github.com:charlesmyller22/DSCommerce.git
 
 # go to the main folder, find DSCatalogApplication.java
 
 # execute the project
-run DSCatalogApplication...main()
+run DSCommerceApplication...main()
 ```
 
 ## Front end web
