@@ -9,7 +9,7 @@ import jakarta.validation.constraints.Size;
 public class ProductDTO {
     private Long id;
     @NotBlank(message = "Required field")
-    @Size(min = 3, max = 80, message = "Name needs to have between 3 to 80 characters")
+    @Size(min = 3, max = 80, message = "Name needs to have between 3 and 80 characters")
     private String name;
     private String description;
     @Positive(message = "Price needs to be positive")
@@ -25,11 +25,11 @@ public class ProductDTO {
     }
 
     public ProductDTO(Product entity) {
-        this.id = entity.getId();
-        this.name = entity.getName();
-        this.description = entity.getDescription();
-        this.price = entity.getPrice();
-        this.imgUrl = entity.getImgUrl();
+        id = entity.getId();
+        name = entity.getName();
+        description = entity.getDescription();
+        price = entity.getPrice();
+        imgUrl = entity.getImgUrl();
     }
 
     public Long getId() {
