@@ -1,6 +1,7 @@
 package com.charlespereira.dscommerce.controllers;
 
 import com.charlespereira.dscommerce.dto.ProductDTO;
+import com.charlespereira.dscommerce.dto.ProductMinDTO;
 import com.charlespereira.dscommerce.services.ProductService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +26,8 @@ public class ProductController {
     }
 
     @GetMapping
-    public ResponseEntity<Page<ProductDTO>> findAll(Pageable pageable) {
-        Page<ProductDTO> dto = service.findAll(pageable);
+    public ResponseEntity<Page<ProductMinDTO>> findAll(Pageable pageable) {
+        Page<ProductMinDTO> dto = service.findAll(pageable);
         return ResponseEntity.ok(dto);
     }
     @PreAuthorize("hasRole('ROLE_ADMIN')")
