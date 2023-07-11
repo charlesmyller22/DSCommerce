@@ -34,6 +34,9 @@ The API will also pass through some tests with RestAssured and Jacoco.
 - Front end web: Netlify
 - Database: Postgresql and for tests I used H2 console
 
+## Postman collection and environment variables
+![POSTMAN](https://github.com/charlesmyller22/images-for-my-projects/blob/main/Screenshot%202023-07-12%20at%2000.14.38.png)
+
 # How to execute the project 
 
 ## Back end
