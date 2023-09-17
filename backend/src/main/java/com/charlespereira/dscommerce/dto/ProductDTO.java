@@ -3,10 +3,7 @@ package com.charlespereira.dscommerce.dto;
 import com.charlespereira.dscommerce.entities.Category;
 import com.charlespereira.dscommerce.entities.Product;
 import jakarta.persistence.Column;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Positive;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +14,7 @@ public class ProductDTO {
     @Size(min = 3, max = 80, message = "Name needs to have between 3 and 80 characters")
     private String name;
     private String description;
+    @NotNull(message = "Field required")
     @Positive(message = "Price needs to be positive")
     private Double price;
     private String imgUrl;

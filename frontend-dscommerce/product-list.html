@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stles.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/product-list.css">
+    <title>Product List</title>
+</head>
+<body>
+    <header class="header-admin">
+        <nav class="container">
+            <h1>DSCommerce</h1>
+            <div class="dsc-navbar-right">
+                <div>
+                <div class="dsc-menu-items-container">
+                    <div class="dsc-menu-item">
+                        <img src="/img/home.svg" alt="home">
+                        <p>Home</p>
+                    </div>
+                    <div class="dsc-menu-item">
+                        <img src="/img/products.svg" alt="register products">
+                        <p>Products</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dsc-logged-user">
+                <p>Charles Pereira</p>
+               <a href="#">Logout</a> 
+            </div>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <section id="product-list-section" class="container">
+            <h2 class="section-title mb20">Register New Product</h2>
+            <div class="btn-page-container mb20">
+                <div class="btn btn-white">
+                    New
+                </div>
+            </div>
+            <form class="search-bar">
+                <button type="submit">🔎︎</button>
+                <input type="text" placeholder="Product Name"/>
+                <button type="reset">X</button>
+            </form>
+            <table class="dsc-table mb20 mt20">
+                <thead>
+                    <th class="dsc-tb576">ID</th>
+                    <th></th>
+                    <th class="dsc-tb768">Price</th>
+                    <th class="dsc-txt-left">Name</th>
+                    <th></th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="dsc-tb576">341</td>
+                        <td><img class="product-list-image" src="/img/computer.png" alt=""></td>
+                        <td class="dsc-tb768">R$ 5000,00</td>
+                        <td class="dsc-txt-left">Computer Gamer XT Plus Ultra</td>
+                        <td><img class="product-list-btn" src="/img/edit.svg" alt=""></td>
+                        <td><img class="product-list-btn" src="/img/delete.svg" alt=""></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="dsc-tb576">341</td>
+                        <td><img class="product-list-image" src="/img/computer.png" alt=""></td>
+                        <td class="dsc-tb768">R$ 5000,00</td>
+                        <td class="dsc-txt-left">Computer Gamer XT Plus Ultra</td>
+                        <td><img class="product-list-btn" src="/img/edit.svg" alt=""></td>
+                        <td><img class="product-list-btn" src="/img/delete.svg" alt=""></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="dsc-tb576">341</td>
+                        <td><img class="product-list-image" src="/img/computer.png" alt=""></td>
+                        <td class="dsc-tb768">R$ 5000,00</td>
+                        <td class="dsc-txt-left">Computer Gamer XT Plus Ultra</td>
+                        <td><img class="product-list-btn" src="/img/edit.svg" alt=""></td>
+                        <td><img class="product-list-btn" src="/img/delete.svg" alt=""></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-next-page">
+                Load more
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stles.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/product-form.css">
+    <title>Cart Items</title>
+</head>
+<body>
+    <header class="header-client">
+        <nav class="container">
+            <h1>DSCommerce</h1>
+            <div class="dsc-logged-user">
+                <p>Charles Pereira</p>
+               <a href="#">Logout</a> 
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="product-form-section" class="container">
+            <div class="product-form-container">
+                <form class="card dsc-form">
+                    <h2>Product data</h2>
+                    <div class="form-controls-container">
+                        <div>
+                            <input class="form-control input-error" type="text" placeholder="Name">
+                        </div>
+                        <div>
+                            <input class="form-control input-error" type="text" placeholder="Price">
+                        </div>  
+                        <div>
+                            <input class="form-control input-error" type="text" placeholder="Image">
+                        </div>
+                        <div>
+                            <select class="form-control" id="">
+                                <option value="">Categorias</option>
+                                <option value="">Valor 1</option>
+                                <option value="">Valor 2</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea class="form-control dsc-select" placeholder="Description"></textarea>
+                        </div>
+                        <div class="product-form-button mt-20">
+                            <button type="submit" class="btn btn-white">Cancel</button>
+                            <button type="reset" class="btn btn-blue">Save</button>
+                        </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
